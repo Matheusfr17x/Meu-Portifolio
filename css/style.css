@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*barra de navegação */
+header, .navbar {
+    background-color: #353d41;
+}
+
+#logo {
+    width:75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+.carousel-indicators li {
+    color: transparent;
+}
+
+main {
+    margin-top: 90px; /* Ajuste o valor conforme necessário */
+}
+
+.carousel-item img {
+    height: 75vh; /* Definindo a altura do slide como 60% da altura da viewport */
+    width: 100%; /* Definindo largura */
+    object-fit: contain; /* Garantindo que a imagem se ajuste ao contêiner mantendo sua proporção original */
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around; /* Distribui os cartões uniformemente */
+    flex-wrap: wrap; /* Permite que os cartões sejam envoltos para várias linhas */
+}
+
+.card {
+    width: calc(15% - 30px); /* Reduzindo a largura dos cartões e a margem entre eles */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Adicione uma cor de fundo para destacar os cartões */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
+    background-color: #f0f0f0;
+}
+
+.card button {
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    border: 0;
+    cursor: pointer;
+    font-size: 90%;
+    
+    background-color: rgb(38, 134, 212);
+    margin-top: -1px;
+    color: white; /* Definir a cor do texto como branco */
+    font-family: 'Roboto', sans-serif; /* Definir a fonte como Roboto */
+}
+
+
+
+.card h3 {
+    margin: 16px 0;
+}
+
+.card span {
+   font-weight: 300;
+   max-width: 240px;
+   font-size:95%;
+   margin-bottom: 16px;
+}
+
+.card img {
+    height: 170px; /* Defina a altura desejada para as imagens */
+    width: auto; /* Mantenha a largura automática para manter a proporção */
+}
+
+#mainSlider {
+    margin-bottom: 70px; /* Adiciona uma margem inferior de 20 pixels ao carrossel */
+}
+
+hr {
+    border-top: 1px solid black !important; /* Definindo a borda sólida e a cor preta */
+    border-top-color: black; /* Definindo a cor da borda como preto */
+    margin: 20px 0; /* Margem superior e inferior de 20 pixels */
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Margem inferior de 20 pixels */
+}
+#carrousel .card {
+    width: 246px;
+    height: 409px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+#carrousel .card .image {
+   height: 170px;
+   width: auto;
+}
+
+#carrousel .card .image img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.container{
+    width: 100%;
+    margin-left:48px;
+}
+
+#carrousel button {
+    /* Estilos para os botões dentro do carrossel */
+    width: 121px;
+   padding-top: 20px;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    border: 0;
+    cursor: pointer;
+    font-size: 90%;
+    background-color: rgb(38, 134, 212);
+    margin-top: -1px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
