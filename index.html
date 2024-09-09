@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="" X-UA-Compatible" content="ie=edge">
+    <title>Swiper.js Carousel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <title>Meu Portifolio</title>
-
-    <!---------------------------------bootstrap---------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!---------------------------------------------------------------------->
@@ -31,41 +29,45 @@
 
     <!-------------------------------CSS------------------------------------>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-------------------------------CSS------------------------------------>
 </head>
 
 
 <body>
-    <header>
-        <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="#" class="navbar-brand">
-                    <img id="logo" src="img/perfil.jpg" alt="hDC Agency"> hDC Agency
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
-                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
 
-                </button>
+    <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="#" class="navbar-brand">
+                <img id="logo" src="img/perfil.jpg" alt="hDC Agency"> hDC Agency
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            </button>
 
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
-                        <a href="#" class="nav-item nav-link" id="about-menu">A agência</a>
-                        <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
-                        <a href="#" class="nav-item nav-link" id="team-menu">Time</a>
-                        <a href="#" class="nav-item nav-link" id="portifolio-menu">Projetos</a>
-                        <a href="#" class="nav-item nav-link" id="contact-menu">Contato</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
 
-                    </div>
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+                    <a href="#" class="nav-item nav-link" id="about-menu">A agência</a>
+                    <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
+                    <a href="#" class="nav-item nav-link" id="team-menu">Time</a>
+                    <a href="#" class="nav-item nav-link" id="portifolio-menu">Projetos</a>
+                    <a href="#" class="nav-item nav-link" id="contact-menu">Contato</a>
 
                 </div>
-            </nav>
-        </div>
-    </header>
+
+            </div>
+        </nav>
+    </div>
+
     <main>
 
         <div class="container-fluid">
@@ -78,23 +80,20 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active"> <!-- Cada slide deve ter a classe 'carousel-item' -->
-                        <img src="img/banner1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+                        <img src="img/bannerPrincipal/banner1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
                         <div class="carousel-caption d-none d-md-block">
-
-
-
                         </div>
                     </div>
 
                     <div class="carousel-item"> <!-- Outros slides também devem ter a classe 'carousel-item' -->
-                        <img src="img/banner2.jpg" class="d-block w-100" alt="Qualquer coisa">
+                        <img src="img/bannerPrincipal/banner2.jpg" class="d-block w-100" alt="Qualquer coisa">
                         <div class="carousel-caption d-none d-md-block">
 
                         </div>
                     </div>
 
                     <div class="carousel-item"> <!-- Outros slides também devem ter a classe 'carousel-item' -->
-                        <img src="img/banner3.jpg" class="d-block w-100" alt="Outra coisa">
+                        <img src="img/bannerPrincipal/banner3.jpg" class="d-block w-100" alt="Outra coisa">
                         <div class="carousel-caption d-none d-md-block">
 
                         </div>
@@ -103,125 +102,224 @@
             </div>
         </div>
 
+
+        <!------------------------------------ Linha horizontal ----------------------------------------------------->
         <div class="container-fluid">
-            <hr> <!-- Linha horizontal -->
-            <h2 class="section-title">Cursos</h2> <!-- Título "Cursos" -->
-            <!-------------------------------------------------------------- Cards aqui ----------------------------------------------------------------------------------------->
+            <hr>
+            <h2 class="section-title">Cursos</h2>
         </div>
+        <!------------------------------------------------------------------------------------------------------->
 
+        <!-------------------------------------------primeiro Carrosel------------------------------------------->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-content">
 
-        <div class="cards">
+                        <img src="img/cursos/cursoJavaScript.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Formação continuada sobre Java Script promovido pelo IF SUL DE MINAS
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/cursoLinux.png" />
+                        <p></p>
+                        <hr>
+                        Curso de ndg linux unhatched Através da plataforma NetAcad
+                        <button>Visualisar</button>
 
-            <section class="card">
-                <img src="img/pooCertificado.png" alt="Contact.us">
-                <h3>JAVA POO</h3>
-                <p></p>
-                <span>Certificado de orientação a obetos em java
-                    <p></p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/pooCertificado.png" />
+                        <p></p>
+                        <hr>
+                        Curso Programação Orientada a Objetos em JAVA pela plataforma Cuso em Video
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/redesIntroducao.png" />
+                        <p></p>
+                        <hr>
+                        Curso CCNAv7 introdução a redes da plataforma NetAcad
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/sistemasTIBradesco.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Projetos de Sistemas de TI Ministrado pela Fundação Bradesco
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/cursoSixSigma.png" />
+                        <p></p>
+                        <hr>
+                        Curso de white belt six sigma Promovido pela RL & Associados
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
 
-                </span>
-                <button>VISUALIZAR</button>
-            </section>
+                        <img src="img/cursos/cursofiapAolucoes.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Soluções e tecnologias Emergentes Promovido pela FIAP
+                        <button>Visualisar</button>
 
-            <section class="card">
-                <img src="img/cursoLinux.png" alt="Shop Here.">
-                <h3>NETACAD LINUX NDG</h3>
-                <span>Certificado CISCO de LINUX NDG</span>
-                <button>VISUALIZAR</button>
-            </section>
+                    </div>
+                </div>
 
-            <section class="card">
-                <img src="img/redesIntroducao.png" alt="About.us">
-                <h3>NETACAD REDES 1</h3>
-                <span>Certificado de introdução a rede pelo cisco NETACAD</span>
-                <button>VISUALIZAR</button>
-            </section>
+                <div class="swiper-slide">
+                    <div class="card-content">
 
-            <section class="card">
-                <img src="img/cursoJavaScript.png" alt="Novo Card">
-                <h3>Curso FIC JAVA SCRIPT</h3>
-                <span>Curso FIC de Java Script pelo IF Campus Machado</span>
-                <button>VISUALIZAR</button>
-            </section>
+                        <img src="img/cursos/cusroFiapInteligenciaArtificial.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Inteligencia Arificial e Computacional Promovido pela FIAP
+                        <button>Visualisar</button>
 
-            <section class="card">
-                <img src="img/sistemasTIBradesco.png" alt="Novo Card">
-                <h3>Bradesco Siststemas TI</h3>
-                <span>Certificado Bradesco de Projetos e sistemas de TI</span>
-                <button>VISUALIZAR</button>
-            </section>
-        </div>
-
-        <div class="container-fluid">
-            <hr> <!-- Linha horizontal -->
-            <h2 class="section-title">Palestras</h2> <!-- Título "Cursos" -->
-            <!-- Cards aqui -->
-        </div>
-        <!---------------------------------------------PALESTRAS------------------------------------------>
-        <div class="cards">
-
-            <section class="card">
-                <img src="img/palestra5g.png" alt="Contact.us">
-                <h3>Palestra 5G</h3>
-                <span>palestra sobre telecomunicações e futuro do 5G</span>
-                <button>VISUALIZAR</button>
-            </section>
-
-            <section class="card">
-                <img src="img/metaverso.png" alt="Shop Here.">
-                <h3>Metaverso BlockChain</h3>
-                <span>Palestra sobre BlockChain e moedas Virtuais</span>
-                <button>VISUALIZAR</button>
-            </section>
-
-            <section class="card">
-                <img src="img/intercambio.png" alt="About.us">
-                <h3>intercambio na carreira de TI</h3>
-                <span>Certificado de introdução a rede pelo cisco NETACAD</span>
-                <button>VISUALIZAR</button>
-            </section>
-
-            <section class="card">
-                <img src="img/programacao.png" alt="Novo Card">
-                <h3>maratonas de programação</h3>
-                <span>Palestra sobrte tecnicas e resoluções de programação</span>
-                <button>VISUALIZAR</button>
-            </section>
-
-            <section class="card">
-                <img src="img/cyberseguranca.png" alt="Novo Card">
-                <h3>CyberSegurança em TI</h3>
-                <span>Palestra sobre perigos e tecnicas de segurança de TI</span>
-                <button>VISUALIZAR</button>
-            </section>
-        </div>
-        <!-------------------------------------------terceira linha--------------------------------------------------------------->
-        <hr> <!-- Linha horizontal -->
-        <section id="carrousel">
-            <div class="container">
-                <div class="conent">
-                    <div class="card">
-                        <div class="card-content">
-                            <div class="image">
-                                <img src="img/cursoLinux.png" alt="">
-                                <h3>intercambio na carreira de TI </h3>
-                                <span>Certificado de introdução a rede pelo cisco NETACAD
-                                    <p></p>
-                                </span>
-
-
-                                <button>VISUALIZAR</button>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Botões de navegação -->
+            <br>
+            <br>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="custom-div">
+            <!-- Conteúdo da div que ocupa 100% da largura -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
 
-  
+        </div>
+        <!------------------------------------------------------------------------------------------------------>
 
+        <!----------------------------------------segundo carrousel--------------------------------------------->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-content">
+
+                        <img src="img/cursos/cursoJavaScript.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Formação continuada sobre Java Script promovido pelo IF SUL DE MINAS
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/cursoLinux.png" />
+                        <p></p>
+                        <hr>
+                        Curso de ndg linux unhatched Através da plataforma NetAcad
+                        <button>Visualisar</button>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/pooCertificado.png" />
+                        <p></p>
+                        <hr>
+                        Curso Programação Orientada a Objetos em JAVA pela plataforma Cuso em Video
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/redesIntroducao.png" />
+                        <p></p>
+                        <hr>
+                        Curso CCNAv7 introdução a redes da plataforma NetAcad
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/sistemasTIBradesco.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Projetos de Sistemas de TI Ministrado pela Fundação Bradesco
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+                        <img src="img/cursos/cursoSixSigma.png" />
+                        <p></p>
+                        <hr>
+                        Curso de white belt six sigma Promovido pela RL & Associados
+                        <button>Visualisar</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-content">
+
+                        <img src="img/cursos/cursofiapAolucoes.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Soluções e tecnologias Emergentes Promovido pela FIAP
+                        <button>Visualisar</button>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card-content">
+
+                        <img src="img/cursos/cusroFiapInteligenciaArtificial.png" />
+                        <p></p>
+                        <hr>
+                        Curso de Inteligencia Arificial e Computacional Promovido pela FIAP
+                        <button>Visualisar</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botões de navegação -->
+            <br>
+            <br>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="custom-div">
+            <!-- Conteúdo da div que ocupa 100% da largura -->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+        </div>
+        <!------------------------------------ Linha horizontal ------------------------------------------------>
+        <div class="container-fluid">
+            <hr>
+            <h2 class="section-title">Palestras</h2>
+        </div>
+        <!-------------------------------------Scripts---------------------------------------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </main>
 </body>
 
 </html>

@@ -8,13 +8,43 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+ /* Estilos básicos para os cards */
+ .swiper {
+    position:relative;
+    width: 90%;
+    padding: 20px 0;
+}
+
+.swiper-slide {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .swiper-slide {
+        height: 150px;
+    }
+}
+
 /*barra de navegação */
-header, .navbar {
+header,
+.navbar {
     background-color: #353d41;
 }
 
 #logo {
-    width:75px;
+    width: 75px;
 }
 
 .navbar-brand {
@@ -35,13 +65,17 @@ header, .navbar {
 }
 
 main {
-    margin-top: 90px; /* Ajuste o valor conforme necessário */
+    margin-top: 90px;
+    /* Ajuste o valor conforme necessário */
 }
 
 .carousel-item img {
-    height: 75vh; /* Definindo a altura do slide como 60% da altura da viewport */
-    width: 100%; /* Definindo largura */
-    object-fit: contain; /* Garantindo que a imagem se ajuste ao contêiner mantendo sua proporção original */
+    height: 75vh;
+    /* Definindo a altura do slide como 60% da altura da viewport */
+    width: 100%;
+    /* Definindo largura */
+    object-fit: contain;
+    /* Garantindo que a imagem se ajuste ao contêiner mantendo sua proporção original */
 }
 
 .container-fluid {
@@ -50,34 +84,45 @@ main {
 }
 
 .cards {
+
+    position: relative;
     display: flex;
-    justify-content: space-around; /* Distribui os cartões uniformemente */
-    flex-wrap: wrap; /* Permite que os cartões sejam envoltos para várias linhas */
+    justify-content: space-around;
+    /* Distribui os cartões uniformemente */
+    flex-wrap: wrap;
+    /* Permite que os cartões sejam envoltos para várias linhas */
 }
 
 .card {
-    width: calc(15% - 30px); /* Reduzindo a largura dos cartões e a margem entre eles */
+    width: calc(15% - 30px);
+    /* Reduzindo a largura dos cartões e a margem entre eles */
     margin-top: 20px;
     padding: 20px;
-    background-color: #f8f9fa; /* Adicione uma cor de fundo para destacar os cartões */
+    background-color: #f8f9fa;
+    /* Adicione uma cor de fundo para destacar os cartões */
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra sutil */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Adicione uma sombra sutil */
     background-color: #f0f0f0;
 }
 
 .card button {
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     border-radius: 1px;
     border: 0;
     cursor: pointer;
     font-size: 90%;
-    
+
     background-color: rgb(38, 134, 212);
     margin-top: -1px;
-    color: white; /* Definir a cor do texto como branco */
-    font-family: 'Roboto', sans-serif; /* Definir a fonte como Roboto */
+    color: white;
+    /* Definir a cor do texto como branco */
+    font-family: 'Roboto', sans-serif;
+    /* Definir a fonte como Roboto */
 }
 
 
@@ -87,32 +132,42 @@ main {
 }
 
 .card span {
-   font-weight: 300;
-   max-width: 240px;
-   font-size:95%;
-   margin-bottom: 16px;
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 95%;
+    margin-bottom: 16px;
 }
 
 .card img {
-    height: 170px; /* Defina a altura desejada para as imagens */
-    width: auto; /* Mantenha a largura automática para manter a proporção */
+    height: 170px;
+    /* Defina a altura desejada para as imagens */
+    width: auto;
+    /* Mantenha a largura automática para manter a proporção */
 }
 
 #mainSlider {
-    margin-bottom: 70px; /* Adiciona uma margem inferior de 20 pixels ao carrossel */
+    margin-bottom: 70px;
+    /* Adiciona uma margem inferior de 20 pixels ao carrossel */
 }
 
 hr {
-    border-top: 1px solid black !important; /* Definindo a borda sólida e a cor preta */
-    border-top-color: black; /* Definindo a cor da borda como preto */
-    margin: 20px 0; /* Margem superior e inferior de 20 pixels */
+    border-top: 1px solid black !important;
+    /* Definindo a borda sólida e a cor preta */
+    border-top-color: black;
+    /* Definindo a cor da borda como preto */
+    margin: 20px 0;
+    /* Margem superior e inferior de 20 pixels */
 }
 
 .section-title {
-    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
-    color: #333; /* Cor do texto */
-    margin-bottom: 20px; /* Margem inferior de 20 pixels */
+    font-family: 'Roboto', sans-serif;
+    /* Fonte Roboto */
+    color: #333;
+    /* Cor do texto */
+    margin-bottom: 20px;
+    /* Margem inferior de 20 pixels */
 }
+
 #carrousel .card {
     width: 246px;
     height: 409px;
@@ -124,35 +179,82 @@ hr {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f0f0f0;
 }
+
 #carrousel .card .image {
-   height: 170px;
-   width: auto;
+    height: 170px;
+    width: auto;
 }
 
-#carrousel .card .image img{
+#carrousel .card .image img {
     height: 100%;
     width: 100%;
 }
 
 
-.container{
+.container {
     width: 100%;
-    margin-left:48px;
+    margin-left: 48px;
 }
 
-#carrousel button {
-    /* Estilos para os botões dentro do carrossel */
-    width: 121px;
-   padding-top: 20px;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem;
-    border-radius: 1px;
-    border: 0;
-    cursor: pointer;
-    font-size: 90%;
-    background-color: rgb(38, 134, 212);
-    margin-top: -1px;
+.card-content {
+    background-color: #f9f9f9; /* Cor de fundo do card */
+    border-radius: 10px; /* Arredonda os cantos do card */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para o card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem caiba dentro do card sem distorção */
+    border-radius: 5px; /* Opcional: Arredonda os cantos da imagem */
+}
+
+.card-content button {
+    margin-top: 10px; /* Espaçamento entre o botão e a imagem */
+    padding: 10px 20px;
+    background-color: #007bff;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.card-content button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.swiper-slide {
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+    display: flex;
+    align-items: stretch; /* Garante que os elementos internos se alinhem bem */
+}
+
+.card-content {
+    flex-grow: 1; /* Faz com que o card preencha todo o espaço disponível */
+}
+
+/*-------------------------------------botão de passar os cards ------------------------------- */
+
+
+/*------------------------------------carrosel sem margens------------------------------------- */
+
+/* Div que ocupa 100% da largura da tela */
+.custom-div {
+    position: absolute;
+    top: 145%; /* Move o elemento para 20% da altura da tela */
+   
+    width: 100%;
+   
+   
+    
+    
+   
+   
+}
